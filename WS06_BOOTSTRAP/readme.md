@@ -1,1 +1,1 @@
-Työpaja 06
+Työpaja 06.
