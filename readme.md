@@ -1,0 +1,1 @@
+Hei! Täältä löydät minun tekemät harjoitukset "Websivuston kehittäminen" kurssilta.
