@@ -27,6 +27,17 @@ p {
     th {
       background-color: rgb(196, 142, 80);
     }
+
+    a {
+  color: #5d0a0a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #360e0e;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
     
     form {
       display: flex;
