@@ -35,6 +35,7 @@ p {
 
 a:hover {
   color: #360e0e;
+  background-color: #5d0a0a;
   padding: 2px 4px;
   border-radius: 3px;
 }
