@@ -96,9 +96,9 @@ a:hover {
         }
       }
       .pseudo-list li:nth-child(odd) {
-        background-color: lightgray;
+        background-color: rgb(255, 119, 0);
       }
       
       .pseudo-list li:nth-child(even) {
-        background-color: white;
+        background-color: rgb(241, 163, 85);
       }
