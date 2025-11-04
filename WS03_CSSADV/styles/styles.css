@@ -69,7 +69,7 @@ a:hover {
       background-color: #360e0e;
     }
     .transition-button {
-        background-color: lightblue;
+        background-color: rgb(203, 135, 58);
         padding: 10px 20px;
         border: none;
         cursor: pointer;
@@ -82,7 +82,7 @@ a:hover {
       .animation-box {
         width: 50px;
         height: 50px;
-        background-color: lightgreen;
+        background-color: rgb(255, 0, 0);
         position: relative;
         animation: move 2s infinite alternate;
       }
