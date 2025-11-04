@@ -102,3 +102,12 @@ a:hover {
       .pseudo-list li:nth-child(even) {
         background-color: rgb(255, 162, 0);
       }
+      
+      .filter-image {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+      }
+      
+      .filter-image:hover {
+        filter: grayscale(0%);
+      }
