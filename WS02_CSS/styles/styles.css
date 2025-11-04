@@ -7,7 +7,7 @@ p {
     }
     
     h1 {
-      font-size: 3em;
+      font-size: 2em;
     }
     div {
       padding: 20px;
@@ -45,7 +45,7 @@ p {
     }
     
     input[type="submit"] {
-      background-color: #4CAF50;
+      background-color: #5d0a0a;
       color: white;
       padding: 10px;
       border: none;
@@ -54,5 +54,5 @@ p {
     }
     
     input[type="submit"]:hover {
-      background-color: #821616;
+      background-color: #360e0e;
     }
