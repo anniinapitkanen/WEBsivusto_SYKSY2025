@@ -7,7 +7,7 @@ p {
     }
     
     h1 {
-      font-size: 2em;
+      font-size: 3em;
     }
     div {
       padding: 20px;
@@ -54,5 +54,5 @@ p {
     }
     
     input[type="submit"]:hover {
-      background-color: #45a049;
+      background-color: #821616;
     }
