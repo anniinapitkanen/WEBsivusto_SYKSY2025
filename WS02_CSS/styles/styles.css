@@ -25,7 +25,7 @@ p {
     }
     
     th {
-      background-color: #ffffff;
+      background-color: #785941;
     }
     
     form {
@@ -40,7 +40,7 @@ p {
     
     input[type="text"], input[type="email"] {
       padding: 8px;
-      border: 1px solid #bc8a46;
+      border: 1px solid #ffffff;
       border-radius: 4px;
     }
     
