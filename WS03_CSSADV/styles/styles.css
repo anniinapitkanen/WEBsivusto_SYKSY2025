@@ -96,11 +96,11 @@ a:hover {
         }
       }
       .pseudo-list li:nth-child(odd) {
-        background-color: rgb(255, 119, 0);
+        background-color: rgb(166, 120, 79);
       }
       
       .pseudo-list li:nth-child(even) {
-        background-color: rgb(255, 162, 0);
+        background-color: rgb(217, 144, 101);
       }
       
       .filter-image {
