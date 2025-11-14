@@ -136,7 +136,7 @@ input[type="submit"]:hover {
 }
 
 .box {
-  background-color: rgb(181, 118, 154);
+  background-color: rgb(205, 134, 174);
   padding: 20px;
   text-align: center;
 }
@@ -148,7 +148,7 @@ input[type="submit"]:hover {
 }
 
 .grid-item {
-  background-color: rgb(168, 152, 131);
+  background-color: rgb(161, 129, 87);
   padding: 20px;
   text-align: center;
 }
