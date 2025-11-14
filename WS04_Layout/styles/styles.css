@@ -136,7 +136,7 @@ input[type="submit"]:hover {
 }
 
 .box {
-  background-color: lightblue;
+  background-color: rgb(167, 129, 151);
   padding: 20px;
   text-align: center;
 }
@@ -148,7 +148,7 @@ input[type="submit"]:hover {
 }
 
 .grid-item {
-  background-color: lightgreen;
+  background-color: rgb(168, 152, 131);
   padding: 20px;
   text-align: center;
 }
@@ -165,6 +165,6 @@ input[type="submit"]:hover {
 
 @media (min-width: 601px) {
   .responsive-box {
-    background-color: lightseagreen;
+    background-color: rgb(127, 99, 80);
   }
 }
