@@ -9,6 +9,10 @@ body {
 h1 {
   font-size: 2em;
 }
+.responsive-image {
+      max-width: 100%;
+      height: auto;
+    }
 :root {
   --carousel-control-color: #fff;
   --carousel-control-width: 15%;
