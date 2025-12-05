@@ -5,7 +5,6 @@
   --text-dark: #2c3e50;
 }
 
-
 body {
   background: linear-gradient(135deg, #f0c0ec 0%, #e8b4e4 100%);
   min-height: 100vh;
@@ -17,7 +16,6 @@ p {
   line-height: 1.8;
   font-size: 1.05rem;
 }
-
 
 header {
   background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
@@ -33,7 +31,6 @@ header h1 {
   margin: 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
-
 
 .profile-section {
   background: white;
@@ -56,7 +53,6 @@ header h1 {
   color: var(--accent-purple);
 }
 
-
 .intro-section h2 {
   color: var(--accent-purple);
   font-weight: 600;
@@ -72,7 +68,6 @@ header h1 {
   font-size: 1.05rem;
 }
 
-
 .highlight-box {
   background: linear-gradient(
     135deg,
@@ -85,13 +80,19 @@ header h1 {
   margin: 1.5rem 0;
 }
 
-
 .nav-section {
   background: white;
-  border-radius: 15px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 2rem;
+  padding: 0;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-underline {
+  margin: 0;
+  padding: 0.5rem 0;
 }
 
 .nav-underline .nav-link {
@@ -113,7 +114,6 @@ header h1 {
   font-weight: 600;
 }
 
-
 footer {
   background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%);
   color: white;
@@ -129,7 +129,6 @@ footer p {
   font-size: 0.95rem;
 }
 
-
 @media (max-width: 768px) {
   header h1 {
     font-size: 2rem;
@@ -139,7 +138,6 @@ footer p {
     padding: 1.5rem;
   }
 }
-
 
 .carousel-control-color {
   color: #fff;
