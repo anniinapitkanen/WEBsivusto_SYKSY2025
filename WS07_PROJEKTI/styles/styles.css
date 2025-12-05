@@ -371,6 +371,7 @@ header h1 {
   align-items: center;
   gap: 1rem;
   margin-bottom: 1.5rem;
+  justify-content: center;
 }
 
 .section-icon {
