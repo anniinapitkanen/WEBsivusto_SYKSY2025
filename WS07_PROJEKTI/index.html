@@ -13,9 +13,19 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
+    <div class="background-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+    </div>
+
     <header>
       <div class="container">
-        <h1 class="text-center">Tervetuloa!</h1>
+        <h1 class="text-center animate-fade-in">Tervetuloa!</h1>
+        <p class="header-subtitle text-center animate-fade-in-delay">
+          Portfolio & Ansioluettelo
+        </p>
       </div>
     </header>
 
@@ -23,18 +33,24 @@
       <div class="container">
         <ul class="nav nav-underline justify-content-center">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html"
-              >Etusivu</a
-            >
+            <a class="nav-link active" aria-current="page" href="index.html">
+              <span class="nav-icon">🏠</span> Etusivu
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="cv.html">CV</a>
+            <a class="nav-link" href="cv.html">
+              <span class="nav-icon">📄</span> CV
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="kuvagalleria.html">Kuvagalleria</a>
+            <a class="nav-link" href="kuvagalleria.html">
+              <span class="nav-icon">🖼️</span> Kuvagalleria
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a>
+            <a class="nav-link" href="yhteystiedot.html">
+              <span class="nav-icon">📧</span> Yhteystiedot
+            </a>
           </li>
         </ul>
       </div>
@@ -43,41 +59,62 @@
     <main class="container">
       <div class="row">
         <div class="col-lg-4 mb-4">
-          <div class="profile-section text-center">
-            <img
-              src="images/omanaama.jpg"
-              alt="Anniina Pitkänen"
-              class="profile-image img-fluid mb-3"
-            />
+          <div class="profile-section text-center slide-in-left">
+            <div class="profile-image-wrapper">
+              <img
+                src="images/omanaama.jpg"
+                alt="Anniina Pitkänen"
+                class="profile-image img-fluid mb-3"
+              />
+              <div class="image-overlay"></div>
+            </div>
             <h3 class="mt-3 profile-name">Anniina Pitkänen</h3>
-            <p class="text-muted mb-0">Datanomi | IT-asiantuntija</p>
+            <p class="text-muted mb-3">Datanomi | IT-asiantuntija</p>
+            <div class="skills-badges">
+              <span class="badge">IT</span>
+              <span class="badge">Tiimityö</span>
+              <span class="badge">Empatia</span>
+            </div>
           </div>
         </div>
 
         <div class="col-lg-8">
-          <div class="profile-section intro-section">
-            <h2>Ansioluettelo</h2>
-            <p class="lead">Tervetuloa minun ansioluettelooni!</p>
+          <div class="profile-section intro-section slide-in-right">
+            <div class="section-header">
+              <span class="section-icon">📋</span>
+              <h2>Ansioluettelo</h2>
+            </div>
+            <p class="lead intro-text">Tervetuloa minun ansioluettelooni!</p>
 
-            <h2 class="mt-4">Kuka olen?</h2>
-            <p>
-              Olen Anniina Pitkänen, datanomi koulutukseltani. Olen toiminut 3,5
-              vuotta IT-asiantuntijana.
-            </p>
-            <p>
-              Tiimityöskentely on minulle tuttua ja minua kuvaillaankin
-              empaattiseksi tiimipelaajaksi.
-            </p>
-            <p>
-              Mielenkiintoni alaa kohtaan on kasvanut vuosi vuodelta ja halu
-              oppia uutta on suuri.
-            </p>
+            <div class="divider"></div>
+
+            <div class="section-header mt-4">
+              <span class="section-icon">👤</span>
+              <h2>Kuka olen?</h2>
+            </div>
+
+            <div class="content-block">
+              <p class="content-paragraph">
+                <span class="highlight-text">Olen Anniina Pitkänen</span>,
+                datanomi koulutukseltani. Olen toiminut 3,5 vuotta
+                IT-asiantuntijana.
+              </p>
+              <p class="content-paragraph">
+                Tiimityöskentely on minulle tuttua ja minua kuvaillaankin
+                empaattiseksi tiimipelaajaksi.
+              </p>
+              <p class="content-paragraph">
+                Mielenkiintoni alaa kohtaan on kasvanut vuosi vuodelta ja halu
+                oppia uutta on suuri.
+              </p>
+            </div>
 
             <div class="highlight-box">
-              <p class="mb-0">
-                <strong>💡 HUOM:</strong> Löydät CV:ni, kuvagallerian ja
+              <div class="highlight-icon">💡</div>
+              <div class="highlight-content">
+                <strong>HUOM!</strong> Löydät CV:ni, kuvagallerian ja
                 yhteystiedot navigoinnista ylhäältä.
-              </p>
+              </div>
             </div>
           </div>
         </div>
@@ -86,7 +123,9 @@
 
     <footer>
       <div class="container">
-        <p>©2025 Anniina Pitkänen</p>
+        <div class="footer-content">
+          <p class="mb-0">Anniina Pitkänen © 2025</p>
+        </div>
       </div>
     </footer>
 
