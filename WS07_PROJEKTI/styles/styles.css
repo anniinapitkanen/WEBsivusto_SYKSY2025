@@ -410,7 +410,8 @@ header h1 {
   margin-bottom: 1.5rem;
   border-bottom: 3px solid var(--dark-pink);
   padding-bottom: 0.5rem;
-  display: inline-block;
+  display: block;
+  text-align: center;
 }
 
 .intro-section p {
