@@ -1,3 +1,4 @@
+/* ETUSIVUN TYYLI */
 :root {
   --primary-pink: #f0c0ec;
   --dark-pink: #d896d3;
@@ -596,4 +597,95 @@ footer::before {
 .carousel-caption {
   color: #fff;
   padding: 1.25rem;
+}
+
+/* CV SIVUN TYYLI */
+.cv-item {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(155, 89, 182, 0.2);
+}
+
+.cv-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.cv-year {
+  min-width: 150px;
+  font-weight: 600;
+  color: var(--accent-purple);
+  font-size: 1.1rem;
+}
+
+.cv-content {
+  flex: 1;
+}
+
+.cv-content h4 {
+  color: var(--text-dark);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.cv-subtitle {
+  color: var(--text-light);
+  font-style: italic;
+  margin-bottom: 0.25rem;
+}
+
+.cv-organization {
+  color: var(--text-light);
+  margin-bottom: 0;
+}
+
+.cv-list {
+  margin: 0.5rem 0 0 1.5rem;
+  padding: 0;
+}
+
+.cv-list li {
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.skill-card {
+  background: rgba(155, 89, 182, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--accent-purple);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(155, 89, 182, 0.2);
+}
+
+.skill-card h5 {
+  color: var(--accent-purple);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.skill-card p {
+  color: var(--text-dark);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .cv-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .cv-year {
+    min-width: auto;
+  }
 }
