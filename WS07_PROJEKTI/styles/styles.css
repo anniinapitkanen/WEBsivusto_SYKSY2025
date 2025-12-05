@@ -419,6 +419,21 @@ header h1 {
   font-size: 1.05rem;
 }
 
+.welcome-box {
+  background: rgba(155, 89, 182, 0.05);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid var(--accent-purple);
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.welcome-box p {
+  margin: 0;
+  font-style: italic;
+  color: var(--text-light);
+}
+
 .divider {
   height: 2px;
   background: linear-gradient(
