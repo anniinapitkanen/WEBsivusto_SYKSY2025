@@ -4,59 +4,169 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV - Anniina Pitkänen</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
-
   <body>
+    <div class="background-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+    </div>
+
     <header>
-      <h1>CV</h1>
+      <div class="container">
+        <h1 class="text-center animate-fade-in">CV</h1>
+        <p class="header-subtitle text-center animate-fade-in-delay">
+          Ansioluettelo
+        </p>
+      </div>
     </header>
 
-    <main>
-      <section>
-        <h2>Koulutus</h2>
-        <p>
-          2017 - 2020<br />
-          Tieto- ja viestintätekniikan perustutkinto - Business College Helsinki
-        </p>
-        <p>
-          2025 - Nykyhetki<br />
-          Tietojenkäsittely tradenomi, di­gi­taa­lis­ten pal­ve­lui­den
-          ke­hit­tä­mi­nen - Laurea-ammattikorkeakoulu
-        </p>
-      </section>
-      <section>
-        <h2>Työkokemus</h2>
-        <p>
-          3,5 vuoden työkokemus IT-asiantuntijan tehtävissä, joka sisälsi:<br />
-          Käyttöjärjestelmien asennuksen ja ylläpidon sekä niiden toiminnan
-          tarkistamisen.<br />
-          Laitteiden päivitykset ja ohjelmistojen asennukset.<br />
-          Laiterekisterin, käyttäjätietokannan ja tikettijärjestelmän käyttö.
-        </p>
-        <p>
-          6kk työkokemus lastenhoitajan tehtävässä, joka sisälsi:<br />
-          1-3 vuotiaiden lasten huolenpitoa, turvallisuudesta huolehtimista,
-          sekä osallistumista kasvatuksellisiin ja leikkiin liittyviin
-          toimintoihin.
-        </p>
-      </section>
-      <section>
-        <h2>Taidot</h2>
-        <p>
-          Käyttöjärjestelmät: Windows 10 ja 11.<br />
-          IT-infrastruktuurin hallinta: Laitteiden asennus ja ylläpito.<br />
-          Laitehallinta: 3stepIT järjestelmä.<br />
-          Tietokanta: Active Directory (AD).<br />
-          Asiakaspalvelu: Tikettijärjestelmä.
-        </p>
-      </section>
+    <nav class="nav-section">
+      <div class="container">
+        <ul class="nav nav-underline justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"> Etusivu </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="cv.html">
+              CV
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kuvagalleria.html"> Kuvagalleria </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="yhteystiedot.html"> Yhteystiedot </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="profile-section slide-in-left">
+            <h2 class="text-center">Koulutus</h2>
+
+            <div class="cv-item">
+              <div class="cv-year">2017 - 2020</div>
+              <div class="cv-content">
+                <h4>Tieto- ja viestintätekniikan perustutkinto</h4>
+                <p class="cv-organization">Business College Helsinki</p>
+              </div>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-year">2025 - Nykyhetki</div>
+              <div class="cv-content">
+                <h4>Tietojenkäsittely tradenomi (AMK)</h4>
+                <p class="cv-subtitle">
+                  Digitaalisten palveluiden kehittäminen
+                </p>
+                <p class="cv-organization">Laurea-ammattikorkeakoulu</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-section slide-in-right">
+            <h2 class="text-center">Työkokemus</h2>
+
+            <div class="cv-item">
+              <div class="cv-year">3,5 vuotta</div>
+              <div class="cv-content">
+                <h4>IT-asiantuntija</h4>
+                <ul class="cv-list">
+                  <li>
+                    Käyttöjärjestelmien asennus ja ylläpito sekä niiden
+                    toiminnan tarkistaminen
+                  </li>
+                  <li>Laitteiden päivitykset ja ohjelmistojen asennukset</li>
+                  <li>
+                    Laiterekisterin, käyttäjätietokannan ja tikettijärjestelmän
+                    käyttö
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-year">6 kuukautta</div>
+              <div class="cv-content">
+                <h4>Lastenhoitaja</h4>
+                <ul class="cv-list">
+                  <li>
+                    1-3 vuotiaiden lasten huolenpito ja turvallisuudesta
+                    huolehtiminen
+                  </li>
+                  <li>
+                    Osallistuminen kasvatuksellisiin ja leikkiin liittyviin
+                    toimintoihin
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-section slide-in-left">
+            <h2 class="text-center">Taidot</h2>
+
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="skill-card">
+                  <h5>Käyttöjärjestelmät</h5>
+                  <p>Windows 10 ja 11</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="skill-card">
+                  <h5>IT-infrastruktuurin hallinta</h5>
+                  <p>Laitteiden asennus ja ylläpito</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="skill-card">
+                  <h5>Laitehallinta</h5>
+                  <p>3stepIT järjestelmä</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="skill-card">
+                  <h5>Tietokanta</h5>
+                  <p>Active Directory (AD)</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="skill-card">
+                  <h5>Asiakaspalvelu</h5>
+                  <p>Tikettijärjestelmä</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>
-      <p>&copy; 2025 Anniina Pitkänen</p>
+      <div class="container">
+        <div class="footer-content">
+          <p class="mb-0">©2025 Anniina Pitkänen</p>
+        </div>
+      </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz4YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
