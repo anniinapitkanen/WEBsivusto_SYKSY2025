@@ -408,7 +408,6 @@ header h1 {
   color: var(--accent-purple);
   font-weight: 600;
   margin-bottom: 1.5rem;
-  border-bottom: 3px solid var(--dark-pink);
   padding-bottom: 0.5rem;
   display: block;
   text-align: center;
