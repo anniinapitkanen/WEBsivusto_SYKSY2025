@@ -1,47 +1,159 @@
-p {
-  color: rgb(0, 0, 0);
+:root {
+  --primary-pink: #f0c0ec;
+  --dark-pink: #d896d3;
+  --accent-purple: #9b59b6;
+  --text-dark: #2c3e50;
 }
 
 body {
-  background-color: rgb(240, 192, 236);
+  background: linear-gradient(135deg, #f0c0ec 0%, #e8b4e4 100%);
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1 {
-  font-size: 2em;
+p {
+  color: var(--text-dark);
+  line-height: 1.8;
+  font-size: 1.05rem;
 }
-.responsive-image {
-      max-width: 100%;
-      height: auto;
-    }
-:root {
-  --carousel-control-color: #fff;
-  --carousel-control-width: 15%;
-  --carousel-control-opacity: 0.5;
-  --carousel-control-hover-opacity: 0.9;
-  --carousel-control-transition: opacity 0.15s ease;
-  --carousel-control-icon-filter: none;
 
-  --carousel-indicator-width: 30px;
-  --carousel-indicator-height: 3px;
-  --carousel-indicator-hit-area-height: 10px;
-  --carousel-indicator-spacer: 3px;
-  --carousel-indicator-opacity: 0.5;
-  --carousel-indicator-active-bg: #fff;
-  --carousel-indicator-active-opacity: 1;
-  --carousel-indicator-transition: opacity 0.6s ease;
+header {
+  background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+  color: white;
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-  --carousel-caption-width: 70%;
-  --carousel-caption-color: #fff;
-  --carousel-caption-padding-y: 1.25rem;
-  --carousel-caption-spacer: 1.25rem;
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
 
-  --carousel-control-icon-width: 2rem;
+.profile-section {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
 
-  /* fill in the SVG with explicit hex color encoded as %23 for "#" in the data URL */
-  --carousel-control-prev-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0'/></svg>");
-  --carousel-control-next-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/></svg>");
+.profile-image {
+  border-radius: 50%;
+  border: 5px solid var(--accent-purple);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  margin: 0 auto;
+  display: block;
+}
 
-  --carousel-transition-duration: 0.6s;
-  --carousel-transition: transform var(--carousel-transition-duration)
-    ease-in-out; /* Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`) */
+.profile-name {
+  color: var(--accent-purple);
+}
+
+.intro-section h2 {
+  color: var(--accent-purple);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid var(--dark-pink);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.intro-section p {
+  color: var(--text-dark);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.highlight-box {
+  background: linear-gradient(
+    135deg,
+    rgba(155, 89, 182, 0.1) 0%,
+    rgba(216, 150, 211, 0.1) 100%
+  );
+  border-left: 4px solid var(--accent-purple);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+
+.nav-section {
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.nav-underline .nav-link {
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.75rem 1.5rem;
+}
+
+.nav-underline .nav-link:hover {
+  color: var(--accent-purple);
+  background-color: rgba(155, 89, 182, 0.1);
+  border-radius: 8px;
+}
+
+.nav-underline .nav-link.active {
+  color: var(--accent-purple);
+  border-bottom-color: var(--accent-purple);
+  font-weight: 600;
+}
+
+footer {
+  background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%);
+  color: white;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  text-align: center;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  color: white;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .profile-section {
+    padding: 1.5rem;
+  }
+}
+
+.carousel-control-color {
+  color: #fff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.carousel-indicators button {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  opacity: 0.5;
+  border: none;
+}
+
+.carousel-indicators button.active {
+  opacity: 1;
+}
+
+.carousel-caption {
+  color: #fff;
+  padding: 1.25rem;
 }
