@@ -737,19 +737,21 @@ footer::before {
 
 /*  KUVAGALLERIA-SIVU - Carousel tyylit */
 
-/* Pienempi valkoinen tausta */
+/* Valkoinen tausta karusellin ympärillä — sirompi */
+.profile-section {
+  background: white;         /* valkoinen tausta */
+  padding: 20px;             /* aiemmin oli liian isot, siksi kavennetaan */
+  max-width: 750px;          /* rajoittaa valkoisen laatikon leveyttä */
+  margin: 0 auto;            /* keskittää laatikon */
+  border-radius: 12px;       /* pyöristetyt kulmat */
+  box-shadow: 0 0 20px rgba(0,0,0,0.06); /* kevyt varjo */
+}
+
+/* container ei enää venytä valkoista taustaa */
 main.container {
   padding-left: 0;
   padding-right: 0;
-  max-width: 900px;  /* säädä tarvittaessa */
-  margin-top: 20px;
-}
-
-.profile-section {
-  padding: 0;          /* Poistaa ylimääräisen sisätilan */
-  background: none;     /* Poistaa valkoisen taustan */
-  border: none;
-  box-shadow: none;
+  max-width: 900px;  
 }
 
 /* Itse karuselli */
@@ -765,7 +767,7 @@ main.container {
   border-radius: 10px;
 }
 
-/* Carousel nuolet - parempi näkyvyys */
+/* Carousel nuolet */
 .carousel-control-prev,
 .carousel-control-next {
   width: 5%;
