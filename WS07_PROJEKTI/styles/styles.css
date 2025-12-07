@@ -737,10 +737,8 @@ footer::before {
 
 /*  KUVAGALLERIA-SIVU - Carousel tyylit */
 
-/* Anna karusellille koko sivun leveys */
-.carousel-inner {
-  max-width: 100%;
-  width: 100%;
+#carouselExampleIndicators {
+  max-width: 700px;   /* muuta tähän haluamasi leveys */
   margin: 0 auto;
 }
 
@@ -749,7 +747,7 @@ footer::before {
   border-radius: 10px;
   object-fit: cover;
   width: 100%;
-  max-height: 900px;
+  max-height: 700px;
 }
 
 /* Carousel nuolet - parempi näkyvyys */
