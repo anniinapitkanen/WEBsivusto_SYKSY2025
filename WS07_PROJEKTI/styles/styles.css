@@ -737,6 +737,22 @@ footer::before {
 
 /*  KUVAGALLERIA-SIVU - Carousel tyylit */
 
+/* Pienempi valkoinen tausta */
+main.container {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 900px;  /* säädä tarvittaessa */
+  margin-top: 20px;
+}
+
+.profile-section {
+  padding: 0;          /* Poistaa ylimääräisen sisätilan */
+  background: none;     /* Poistaa valkoisen taustan */
+  border: none;
+  box-shadow: none;
+}
+
+/* Itse karuselli */
 #carouselExampleIndicators {
   max-width: 700px;   /* muuta tähän haluamasi leveys */
   margin: 0 auto;
