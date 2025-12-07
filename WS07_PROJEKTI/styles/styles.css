@@ -1,4 +1,4 @@
-/* ETUSIVU */
+/* VÄRIT */
 :root {
   --primary-pink: #f0c0ec;
   --dark-pink: #d896d3;
@@ -9,6 +9,8 @@
   --text-light: #7f8c8d;
 }
 
+/* KAIKKIEN SIVUJEN TYYLIT */
+
 body {
   background: linear-gradient(135deg, #f0c0ec 0%, #e8b4e4 50%, #d896d3 100%);
   min-height: 100vh;
@@ -17,6 +19,21 @@ body {
   overflow-x: hidden;
 }
 
+p {
+  color: var(--text-dark);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+header,
+nav,
+main,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* TAUSTAN ANIMAATIOPALLOT */
 .background-shapes {
   position: fixed;
   top: 0;
@@ -91,19 +108,7 @@ body {
   }
 }
 
-header,
-nav,
-main,
-footer {
-  position: relative;
-  z-index: 1;
-}
-
-p {
-  color: var(--text-dark);
-  line-height: 1.8;
-  font-size: 1.05rem;
-}
+/* HEADER */
 
 header {
   background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 50%, #7d3c98 100%);
@@ -167,6 +172,8 @@ header h1 {
   letter-spacing: 1px;
 }
 
+/* ANIMAATIOT */
+
 .animate-fade-in {
   animation: fadeIn 1s ease-in;
 }
@@ -224,6 +231,28 @@ header h1 {
   }
 }
 
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.8));
+  }
+}
+
+/* NAVI */
+
 .nav-section {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
@@ -279,6 +308,8 @@ header h1 {
   box-shadow: 0 4px 8px rgba(155, 89, 182, 0.3);
 }
 
+/* KAIKKI PROFIILIKORTIT */
+
 .profile-section {
   background: white;
   border-radius: 20px;
@@ -293,6 +324,44 @@ header h1 {
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
 }
+
+/* FOOTER */
+
+footer {
+  background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 50%, #a569bd 100%);
+  color: white;
+  padding: 2.5rem 0;
+  margin-top: 4rem;
+  text-align: center;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, white, transparent);
+  opacity: 0.3;
+}
+
+.footer-content p {
+  color: white;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.footer-subtitle {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 0.5rem !important;
+}
+
+/* ETUSIVUN TYYLIT */
 
 .profile-image-wrapper {
   position: relative;
@@ -378,16 +447,6 @@ header h1 {
 .section-icon {
   font-size: 2rem;
   animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
 }
 
 .section-header h2 {
@@ -497,109 +556,12 @@ header h1 {
   animation: glow 2s infinite;
 }
 
-@keyframes glow {
-  0%,
-  100% {
-    filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.5));
-  }
-  50% {
-    filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.8));
-  }
-}
-
 .highlight-content {
   flex: 1;
 }
 
-footer {
-  background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 50%, #a569bd 100%);
-  color: white;
-  padding: 2.5rem 0;
-  margin-top: 4rem;
-  text-align: center;
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
-  position: relative;
-}
+/* CV TYYLIT */
 
-footer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, transparent, white, transparent);
-  opacity: 0.3;
-}
-
-.footer-content p {
-  color: white;
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.footer-subtitle {
-  font-size: 0.9rem;
-  opacity: 0.8;
-  margin-top: 0.5rem !important;
-}
-
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
-
-  .header-subtitle {
-    font-size: 1rem;
-  }
-
-  .profile-section {
-    padding: 1.5rem;
-  }
-
-  .nav-underline .nav-link {
-    padding: 0.6rem 1rem;
-    font-size: 0.9rem;
-  }
-
-  .nav-icon {
-    font-size: 1rem;
-  }
-
-  .section-header {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.carousel-control-color {
-  color: #fff;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(1);
-}
-
-.carousel-indicators button {
-  width: 30px;
-  height: 3px;
-  background-color: #fff;
-  opacity: 0.5;
-  border: none;
-}
-
-.carousel-indicators button.active {
-  opacity: 1;
-}
-
-.carousel-caption {
-  color: #fff;
-  padding: 1.25rem;
-}
-
-/* CV */
 .cv-item {
   display: flex;
   gap: 2rem;
@@ -679,17 +641,8 @@ footer::before {
   margin: 0;
 }
 
-@media (max-width: 768px) {
-  .cv-item {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
+/* YHTEYSTIETO TYYLIT */
 
-  .cv-year {
-    min-width: auto;
-  }
-}
-/* YHTEISTIEDOT */
 .contact-form {
   margin-top: 2rem;
 }
@@ -774,4 +727,76 @@ footer::before {
   color: var(--text-dark);
   margin: 0;
   font-size: 1rem;
+}
+
+/* KUVAGALLERIA TYYLIT */
+
+.carousel-control-color {
+  color: #fff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.carousel-indicators button {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  opacity: 0.5;
+  border: none;
+}
+
+.carousel-indicators button.active {
+  opacity: 1;
+}
+
+.carousel-caption {
+  color: #fff;
+  padding: 1.25rem;
+}
+
+/* KAIKKIEN RESPONSIIVISUUS */
+
+@media (max-width: 768px) {
+  /* HEADER */
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .header-subtitle {
+    font-size: 1rem;
+  }
+
+  /* PROFIILIKORTIT */
+  .profile-section {
+    padding: 1.5rem;
+  }
+
+  /* NAVI */
+  .nav-underline .nav-link {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .nav-icon {
+    font-size: 1rem;
+  }
+
+  /* ETUSIVU */
+  .section-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* CV */
+  .cv-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .cv-year {
+    min-width: auto;
+  }
 }
