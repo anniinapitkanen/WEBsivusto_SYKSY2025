@@ -743,10 +743,10 @@ footer::before {
 }
 
 .carousel-item img {
-  border-radius: 15px;
+  border-radius: 10px;
   object-fit: cover;
-  max-height: 500px;
-  width: 100%;
+  max-height: 700px;
+  width: 150%;
 }
 
 /* Carousel nuolet - parempi näkyvyys */
