@@ -735,6 +735,33 @@ footer::before {
   font-size: 1rem;
 }
 
+/*  KUVAGALLERIA-SIVU - Carousel tyylit */
+.carousel-control-color {
+  color: #fff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.carousel-indicators button {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  opacity: 0.5;
+  border: none;
+}
+
+.carousel-indicators button.active {
+  opacity: 1;
+}
+
+.carousel-caption {
+  color: #fff;
+  padding: 1.25rem;
+}
+
 /* RESPONSIIVISUUS - KAIKKI SIVUT */
 @media (max-width: 768px) {
   /* Header */
@@ -767,7 +794,7 @@ footer::before {
     align-items: center;
   }
 
-  /* CV */
+  /* CV-sivu */
   .cv-item {
     flex-direction: column;
     gap: 0.5rem;
@@ -775,20 +802,5 @@ footer::before {
 
   .cv-year {
     min-width: auto;
-  }
-
-  /* Kuvagalleria */
-  .carousel-inner {
-    max-width: 100%;
-  }
-
-  .carousel-item img {
-    max-height: 400px;
-  }
-
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    width: 2rem;
-    height: 2rem;
   }
 }
