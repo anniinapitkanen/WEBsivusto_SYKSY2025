@@ -1,4 +1,4 @@
-/* VÄRIT */
+/* VÄRI */
 :root {
   --primary-pink: #f0c0ec;
   --dark-pink: #d896d3;
@@ -9,8 +9,7 @@
   --text-light: #7f8c8d;
 }
 
-/* KAIKKIEN SIVUJEN TYYLIT */
-
+/* YLEISET TYYLIT - KAIKKI SIVUT */
 body {
   background: linear-gradient(135deg, #f0c0ec 0%, #e8b4e4 50%, #d896d3 100%);
   min-height: 100vh;
@@ -33,7 +32,7 @@ footer {
   z-index: 1;
 }
 
-/* TAUSTAN ANIMAATIOPALLOT */
+/* Animoidut taustamuodot */
 .background-shapes {
   position: fixed;
   top: 0;
@@ -109,7 +108,6 @@ footer {
 }
 
 /* HEADER */
-
 header {
   background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 50%, #7d3c98 100%);
   color: white;
@@ -173,7 +171,6 @@ header h1 {
 }
 
 /* ANIMAATIOT */
-
 .animate-fade-in {
   animation: fadeIn 1s ease-in;
 }
@@ -209,6 +206,10 @@ header h1 {
   animation: slideInRight 0.8s ease-out 0.2s both;
 }
 
+.slide-in-up {
+  animation: slideInUp 0.8s ease-out;
+}
+
 @keyframes slideInLeft {
   from {
     opacity: 0;
@@ -228,6 +229,17 @@ header h1 {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -251,8 +263,7 @@ header h1 {
   }
 }
 
-/* NAVI */
-
+/* NAVIGAATIO */
 .nav-section {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
@@ -308,8 +319,7 @@ header h1 {
   box-shadow: 0 4px 8px rgba(155, 89, 182, 0.3);
 }
 
-/* KAIKKI PROFIILIKORTIT */
-
+/* PROFIILIKORTIT (Kaikilla sivuilla) */
 .profile-section {
   background: white;
   border-radius: 20px;
@@ -326,7 +336,6 @@ header h1 {
 }
 
 /* FOOTER */
-
 footer {
   background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 50%, #a569bd 100%);
   color: white;
@@ -361,8 +370,7 @@ footer::before {
   margin-top: 0.5rem !important;
 }
 
-/* ETUSIVUN TYYLIT */
-
+/* ETUSIVU - TYYLIT */
 .profile-image-wrapper {
   position: relative;
   display: inline-block;
@@ -560,8 +568,7 @@ footer::before {
   flex: 1;
 }
 
-/* CV TYYLIT */
-
+/* CV-SIVU - TYYLIT */
 .cv-item {
   display: flex;
   gap: 2rem;
@@ -641,8 +648,7 @@ footer::before {
   margin: 0;
 }
 
-/* YHTEYSTIETO TYYLIT */
-
+/* YHTEYSTIEDOT-SIVU - TYYLIT */
 .contact-form {
   margin-top: 2rem;
 }
@@ -729,27 +735,65 @@ footer::before {
   font-size: 1rem;
 }
 
-/* KUVAGALLERIA TYYLIT */
+/* KUVAGALLERIA-SIVU - Carousel tyylit */
+
+/* Carousel kuvien koko */
+.carousel-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-item img {
+  border-radius: 15px;
+  object-fit: cover;
+  max-height: 500px;
+  width: 100%;
+}
+
+/* Carousel nuolet */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  opacity: 0.8;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(155, 89, 182, 0.8);
+  border-radius: 50%;
+  padding: 0.75rem;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
 
 .carousel-control-color {
   color: #fff;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(1);
-}
-
 .carousel-indicators button {
   width: 30px;
   height: 3px;
-  background-color: #fff;
+  background-color: var(--accent-purple);
   opacity: 0.5;
   border: none;
 }
 
 .carousel-indicators button.active {
   opacity: 1;
+  background-color: var(--accent-purple);
 }
 
 .carousel-caption {
@@ -757,10 +801,9 @@ footer::before {
   padding: 1.25rem;
 }
 
-/* KAIKKIEN RESPONSIIVISUUS */
-
+/* RESPONSIIVISUUS - KAIKKI SIVUT */
 @media (max-width: 768px) {
-  /* HEADER */
+  /* Header */
   header h1 {
     font-size: 2rem;
   }
@@ -769,12 +812,12 @@ footer::before {
     font-size: 1rem;
   }
 
-  /* PROFIILIKORTIT */
+  /* Profiilikortit */
   .profile-section {
     padding: 1.5rem;
   }
 
-  /* NAVI */
+  /* Navigaatio */
   .nav-underline .nav-link {
     padding: 0.6rem 1rem;
     font-size: 0.9rem;
@@ -784,7 +827,7 @@ footer::before {
     font-size: 1rem;
   }
 
-  /* ETUSIVU */
+  /* Etusivu */
   .section-header {
     flex-direction: column;
     align-items: center;
@@ -798,5 +841,20 @@ footer::before {
 
   .cv-year {
     min-width: auto;
+  }
+
+  /* Kuvagalleria */
+  .carousel-inner {
+    max-width: 100%;
+  }
+
+  .carousel-item img {
+    max-height: 400px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 2rem;
+    height: 2rem;
   }
 }
