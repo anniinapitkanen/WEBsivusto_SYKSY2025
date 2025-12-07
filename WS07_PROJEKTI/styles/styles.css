@@ -742,12 +742,11 @@ footer::before {
   margin: 0 auto;
 }
 
-/* Kuvien asettelu ilman valkoisia reunoja */
 .carousel-item img {
-  border-radius: 10px;
-  object-fit: cover;
   width: 100%;
-  max-height: 700px;
+  object-fit: cover;
+  max-height: 900px;
+  border-radius: 10px;
 }
 
 /* Carousel nuolet - parempi näkyvyys */
