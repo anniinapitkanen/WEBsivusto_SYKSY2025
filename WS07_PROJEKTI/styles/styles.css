@@ -1,4 +1,4 @@
-/* ETUSIVUN TYYLI */
+/* ETUSIVU */
 :root {
   --primary-pink: #f0c0ec;
   --dark-pink: #d896d3;
@@ -599,7 +599,7 @@ footer::before {
   padding: 1.25rem;
 }
 
-/* CV SIVUN TYYLI */
+/* CV */
 .cv-item {
   display: flex;
   gap: 2rem;
@@ -684,8 +684,94 @@ footer::before {
     flex-direction: column;
     gap: 0.5rem;
   }
-  
+
   .cv-year {
     min-width: auto;
   }
+}
+/* YHTEISTIEDOT */
+.contact-form {
+  margin-top: 2rem;
+}
+
+.form-label {
+  color: var(--accent-purple);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.contact-input {
+  border: 2px solid rgba(155, 89, 182, 0.2);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-input:focus {
+  border-color: var(--accent-purple);
+  box-shadow: 0 0 0 0.2rem rgba(155, 89, 182, 0.25);
+  outline: none;
+}
+
+.btn-submit {
+  background: linear-gradient(135deg, var(--accent-purple), var(--deep-purple));
+  color: white;
+  border: none;
+  padding: 0.75rem 3rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(155, 89, 182, 0.3);
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(155, 89, 182, 0.5);
+}
+
+.btn-submit:active {
+  transform: translateY(0);
+}
+
+.contact-info {
+  margin-top: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: rgba(155, 89, 182, 0.05);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--accent-purple);
+}
+
+.contact-item:hover {
+  transform: translateX(5px);
+  background: rgba(155, 89, 182, 0.1);
+  box-shadow: 0 4px 12px rgba(155, 89, 182, 0.2);
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  min-width: 60px;
+  text-align: center;
+}
+
+.contact-details h5 {
+  color: var(--accent-purple);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  font-size: 1.1rem;
+}
+
+.contact-details p {
+  color: var(--text-dark);
+  margin: 0;
+  font-size: 1rem;
 }
