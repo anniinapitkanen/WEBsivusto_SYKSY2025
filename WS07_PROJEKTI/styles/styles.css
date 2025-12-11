@@ -755,10 +755,10 @@ carousel-inner {
   border-radius: 10px;
   object-fit: cover;
   width: 100%;
-  max-height: 700px;
+  max-height: 800px;
 }
 
-/* Carousel nuolet - parempi näkyvyys */
+/* Carousel nuolet */
 .carousel-control-prev,
 .carousel-control-next {
   width: 5%;
