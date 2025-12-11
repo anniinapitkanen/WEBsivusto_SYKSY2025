@@ -370,6 +370,31 @@ footer::before {
   margin-top: 0.5rem !important;
 }
 
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.footer-link:hover {
+  color: #e8d4f0;
+  text-decoration: underline;
+  transform: translateY(-2px);
+}
+
+.footer-content p {
+  color: white;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.footer-content p:first-child {
+  margin-bottom: 0.5rem;
+}
+
 /* ETUSIVU - TYYLIT */
 .profile-image-wrapper {
   position: relative;
