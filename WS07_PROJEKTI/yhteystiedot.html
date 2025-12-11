@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="fi">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1" >
-    <title>Yhteystiedot - WS07_PROJEKTI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yhteystiedot - Anniina Pitkänen</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     >
-    <link rel="stylesheet" href="styles/styles.css" >
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <div class="background-shapes">
@@ -54,22 +54,22 @@
       </div>
     </nav>
 
-    <main class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <!-- Yhteydenottolomake -->
-          <div class="profile-section slide-in-left">
-            <h2 class="text-center">Ota yhteyttä</h2>
+    <main class="container my-5">
+      <div class="row justify-content-center g-4">
+        <!-- Yhteydenottolomake -->
+        <div class="col-lg-6 col-md-12">
+          <div class="profile-section slide-in-left h-100">
+            <h2 class="text-center mb-4">Ota yhteyttä</h2>
 
-            <div class="welcome-box">
-              <p>
+            <div class="welcome-box mb-4">
+              <p class="mb-0">
                 Täytä alla oleva lomake, niin otan sinuun yhteyttä
                 mahdollisimman pian!
               </p>
             </div>
 
             <form class="contact-form">
-              <div class="mb-4">
+              <div class="mb-3">
                 <label for="name" class="form-label">Nimi</label>
                 <input
                   type="text"
@@ -81,7 +81,7 @@
                 >
               </div>
 
-              <div class="mb-4">
+              <div class="mb-3">
                 <label for="email" class="form-label">Sähköposti</label>
                 <input
                   type="email"
@@ -93,7 +93,7 @@
                 >
               </div>
 
-              <div class="mb-4">
+              <div class="mb-3">
                 <label for="message" class="form-label">Viesti</label>
                 <textarea
                   class="form-control contact-input"
@@ -110,9 +110,12 @@
               </div>
             </form>
           </div>
+        </div>
 
-          <div class="profile-section slide-in-right">
-            <h2 class="text-center">Yhteystiedot</h2>
+        <!-- Yhteystiedot -->
+        <div class="col-lg-6 col-md-12">
+          <div class="profile-section slide-in-right h-100">
+            <h2 class="text-center mb-4">Yhteystiedot</h2>
 
             <div class="contact-info">
               <div class="contact-item">
@@ -128,6 +131,13 @@
                   <p>+358 44 216 0761</p>
                 </div>
               </div>
+
+              <div class="contact-item">
+                <div class="contact-details">
+                  <h5>Sijainti</h5>
+                  <p>Helsinki, Suomi</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -136,8 +146,18 @@
 
     <footer>
       <div class="container">
-        <div class="footer-content">
-          <p class="mb-0">©2025 Anniina Pitkänen</p>
+        <div class="footer-content text-center">
+          <p class="mb-2">©2025 Anniina Pitkänen</p>
+          <p class="mb-0">
+            <a 
+              href="https://github.com/anniinapitkanen/WEBsivusto_SYKSY2025" 
+              target="_blank" 
+              class="footer-link"
+              rel="noopener noreferrer"
+            >
+              GitHub Repository
+            </a>
+          </p>
         </div>
       </div>
     </footer>
