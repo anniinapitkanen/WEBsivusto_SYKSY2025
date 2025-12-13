@@ -767,15 +767,12 @@ carousel-inner {
 }
 
 /*  KUVAGALLERIA-SIVU - Carousel tyylit */
-
-/* Anna karusellille koko sivun leveys */
 .carousel-inner {
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
 }
 
-/* Kuvien asettelu ilman valkoisia reunoja */
 .carousel-item img {
   border-radius: 10px;
   object-fit: cover;
@@ -783,7 +780,6 @@ carousel-inner {
   max-height: 800px;
 }
 
-/* Carousel nuolet */
 .carousel-control-prev,
 .carousel-control-next {
   width: 5%;
